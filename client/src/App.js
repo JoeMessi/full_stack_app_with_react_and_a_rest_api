@@ -37,7 +37,7 @@ export default class App extends Component {
     return (
       <BrowserRouter>
         <div>
-             // Header always showing, location extracted and passed down as props
+             {/*Header always showing, location extracted and passed down as props*/}
              <Route render={({location})=> <HeaderContx location={location.pathname} />} />
           <Switch>
               <Route exact path='/' component={ CoursesContx } />
